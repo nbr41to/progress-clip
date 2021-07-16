@@ -1,8 +1,9 @@
-import { VFC } from 'react';
+import { VFC, useState } from 'react';
 import { Box } from '@fower/react';
 import { Button } from './Button';
 import { Copy } from 'akar-icons';
 import { AtomicProps } from '@fower/types';
+import { Snackbar } from './Snackbar';
 
 type ProgressTemplateProps = Omit<AtomicProps, 'color'> & {
   title: string;
@@ -14,13 +15,16 @@ export const ProgressTemplate: VFC<ProgressTemplateProps> = ({
   content,
   ...props
 }) => {
+  const [visibleSnackbar, setVisibleSnackbar] = useState(false);
   const copy = () => {
     if (navigator.clipboard) {
       navigator.clipboard.writeText(content);
+      setVisibleSnackbar(true);
     }
   };
   return (
     <Box {...props}>
+      <Snackbar open={visibleSnackbar} close={setVisibleSnackbar} />
       <Box flex mb={16} toCenterY>
         <Box as='h3' mr={12}>
           #.{title}

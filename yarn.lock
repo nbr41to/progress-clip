@@ -532,7 +532,7 @@
     fower-plugin-visibility "^1.40.0"
     fower-plugin-z-index "^1.40.0"
 
-"@fower/react@^1.40.0":
+"@fower/react@^1.27.0":
   version "1.40.0"
   resolved "https://registry.yarnpkg.com/@fower/react/-/react-1.40.0.tgz#f9532028914f193aab80d9f77ca26c8275efd3e6"
   integrity sha512-I4pPqvOWkp5gzp4zi1Y4nRAN4M6YVYLTM7xpupTC+1hO5iqkBrgsJZ4mIRBUFz3andkSaOyzHPWCkYK3ZhTE+g==
@@ -554,7 +554,7 @@
     "@fower/utils" "^1.40.0"
     hoist-non-react-statics "^3.3.2"
 
-"@fower/types@^1.36.0":
+"@fower/types@^1.27.0":
   version "1.36.0"
   resolved "https://registry.yarnpkg.com/@fower/types/-/types-1.36.0.tgz#e0ba3ef6b91bed5515e5ccc66f794590ad15c0db"
   integrity sha512-9pNN3MmaJzkq6l4IIlvcdO2JVZDmlbol27HOPictYRPdwBm7jsHcMetfBo5aGeVLbIM0ddZkDBfBEkjW4l6QiA==

@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fower/react": "^1.27.0",
-    "@fower/types": "^1.27.0",
+    "@fower/react": "^1.50.0",
+    "@fower/types": "^1.36.0",
     "akar-icons": "^1.7.11",
     "firebase": "^8.7.1",
     "next": "11.0.1",

@@ -2,19 +2,14 @@ import { VFC, useState } from 'react';
 import { Box } from '@fower/react';
 import { Button } from './Button';
 import { Copy } from 'akar-icons';
-import { AtomicProps } from '@fower/types';
 import { Snackbar } from './Snackbar';
 
-type ProgressTemplateProps = Omit<AtomicProps, 'color'> & {
-  title: string;
-  content: string;
-};
+// type ProgressTemplateProps = Omit<AtomicProps, 'color'> & {
+//   title: string;
+//   content: string;
+// };
 
-export const ProgressTemplate: VFC<ProgressTemplateProps> = ({
-  title,
-  content,
-  ...props
-}) => {
+export const ProgressTemplate = ({ title, content, ...props }) => {
   const [visibleSnackbar, setVisibleSnackbar] = useState(false);
   const copy = () => {
     if (navigator.clipboard) {

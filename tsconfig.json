@@ -15,6 +15,13 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/ProgressTemplate.jsx",
+    "src/components/Button.jsx",
+    "pages/index.tsx"
+  ],
   "exclude": ["node_modules"]
 }

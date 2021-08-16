@@ -1,19 +1,12 @@
-import { ReactNode, VFC } from 'react';
 import { Box } from '@fower/react';
-import { AtomicProps } from '@fower/types';
 
-type ButtonProps = Omit<AtomicProps, 'color'> & {
-  label: string;
-  icon?: ReactNode;
-  onClick: () => void;
-};
+// type ButtonProps = Omit<AtomicProps, 'color'> & {
+//   label: string;
+//   icon?: ReactNode;
+//   onClick: () => void;
+// };
 
-export const Button: VFC<ButtonProps> = ({
-  label,
-  icon,
-  onClick,
-  ...props
-}) => {
+export const Button = ({ label, icon, onClick, ...props }) => {
   return (
     <Box
       as='button'

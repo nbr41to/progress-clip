@@ -19,6 +19,8 @@ p {
 body {
   background-color: #222;
   color: white;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 a {

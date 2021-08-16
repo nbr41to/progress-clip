@@ -20,7 +20,7 @@ export const ProgressTemplate = ({ title, content, ...props }) => {
   return (
     <Box {...props}>
       <Snackbar open={visibleSnackbar} close={setVisibleSnackbar} />
-      <Box flex mb={16} toCenterY>
+      <Box flex mb={16} toBetween toCenterY>
         <Box as='h3' mr={12}>
           #.{title}
         </Box>

@@ -8,7 +8,7 @@ import { sampleTemplates } from 'src/assets/sample-data';
 
 export default function Home() {
   const login = () => {
-    googleLogin();
+    // googleLogin();
   };
   return (
     <div>
